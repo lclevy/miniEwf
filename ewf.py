@@ -414,6 +414,7 @@ if __name__ == '__main__':
   #print( 'ewf.compute_image_hash2( md5() )' )
 
   #compute hash value of the image, using read() function
+  print('re-computing original md5...')
   print( hexlify( compute_image_hash2( ewf, md5() ) ) )
 
 
