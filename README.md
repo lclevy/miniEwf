@@ -1,7 +1,7 @@
 # miniEwf
 Minimal EWF "driver" in pure Python, to depict inner working of EWF (Evidence Witness Forensic) / Encase file format.
 
-Code written as example for this article in French magazine MISC MAG #117 : https://connect.ed-diamond.com/misc
+Code written as example for this article in French magazine MISC MAG #117 : https://connect.ed-diamond.com/misc/misc-117/description-du-format-de-stockage-forensique-encase-ewf
 
 ### Usage as a cli tool
 
@@ -145,10 +145,11 @@ Conclusion : recomputation of original md5 using ewf.read() is working and ident
 
 - seek() need further testing
 - It is slow, do not expect C++ performance, use https://github.com/libyal/libewf instead.
+- tested with FTK Imager and ewfacquire dumps
 
 ### References
 
 - E01 Compression Format, ASRDATA, around 2002, http://www.asrdata.com/whitepaper-html/
 - libevf code source, Michael Cohen, 2008, https://github.com/py4n6/pyflag/blob/master/src/lib/libevf.c
-- EWF specification, Joachim Metz, 2006-2020, [https://github.com/libyal/libewf/blob/main/documentation/Expert%20Witness%20Compression%20Format%20(EWF).asciidoc](https://github.com/libyal/libewf/blob/main/documentation/Expert Witness Compression Format (EWF).asciidoc)
+- EWF specification, Joachim Metz, 2006-2020, [https://github.com/libyal/libewf/blob/main/documentation/Expert%20Witness%20Compression%20Format%20(EWF).asciidoc](https://github.com/libyal/libewf/blob/main/documentation/Expert%20Witness%20Compression%20Format%20(EWF).asciidoc)
 
